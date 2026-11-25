@@ -1,0 +1,1 @@
+Taruh render skin di sini (PNG transparan, seluruh badan, pose & ukuran sama). Contoh: kamu.png dan kamu-spiderman.png. Lalu isi path-nya di js/data.js (CREATORS).

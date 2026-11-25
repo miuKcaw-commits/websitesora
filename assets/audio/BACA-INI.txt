@@ -1,0 +1,5 @@
+Taruh musik di sini:
+- main.mp3      -> musik Beranda sampai Rank (diputar berulang)
+- spiderman.mp3 -> musik khusus halaman Web Dev
+Nama file bisa diganti di js/data.js (MUSIC). Disarankan mp3, di bawah ~5 MB per lagu.
+Pastikan kamu punya hak/izin memakai lagunya.

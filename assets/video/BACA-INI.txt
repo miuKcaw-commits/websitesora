@@ -1,0 +1,1 @@
+Taruh video cinematic hero di sini dengan nama: hero.mp4 (H.264, 1080p, tanpa suara/dimute, ideal 10-25 detik & di bawah ~15 MB). Path diatur di js/data.js (HERO_VIDEO).

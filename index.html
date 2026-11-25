@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sora City — Server Minecraft Kota</title>
+<meta name="description" content="Sora City: server Minecraft Java Edition bertema kota dengan map Sayama.">
+<meta name="theme-color" content="#142B4D">
+<link rel="icon" href="assets/logo-sr.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="rail glass" id="rail" aria-label="Utama"></nav>
+<div class="curtain" id="curtain" aria-hidden="true"><i class="cv"></i><i class="cv"></i><i class="cv"></i><div class="cvl"><img src="assets/logo-sr.png" alt=""><span id="cvt"></span></div></div>
+
+<div class="mix" id="mix"><button class="mute" id="mute" type="button" aria-label="Matikan musik" aria-pressed="false" title="Musik"><svg class="i-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg><svg class="i-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6"/><path d="m16 9 6 6"/></svg></button><div class="vp"><input id="vol" type="range" min="0" max="100" step="1" value="35" aria-label="Volume musik"><output id="volv" for="vol">35</output></div></div>
+<main>
+<!-- BERANDA -->
+<section class="page" id="p-home">
+  <div class="hero" id="hero">
+    <div class="slides" id="slides"></div>
+    <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+    <div class="shade"></div>
+    <div class="wrap hg">
+      <div class="ht">
+        <span class="sign">SELAMAT DATANG<small>DI SERVER KAMI</small></span>
+        <h1>Sora <span>City</span></h1>
+        <p class="lead">Server Minecraft kota untuk bermain santai, menjelajah, dan bertemu pemain lain.</p>
+        <div class="cta"><a class="btn bp" href="#gabung" data-mag>Cara Gabung</a><button class="btn bg" data-copy data-mag>Salin IP</button></div>
+      </div>
+      <aside class="glass dk board" data-tilt>
+        <div class="bh"><span>PAPAN INFO</span><span class="live"><i class="dot" data-dot></i><b data-stat>Memuat…</b></span></div>
+        <div class="bn"><small>PEMAIN ONLINE</small><strong data-players>—</strong></div>
+        <small class="lb">ALAMAT SERVER · JAVA EDITION</small>
+        <div class="ipb"><code data-ip></code><button class="btn bp" data-copy>Salin</button></div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="wrap sec" id="gabung">
+    <div class="sh"><span class="sign sm">PETUNJUK JALAN</span><h2>Masuk ke kota dalam empat langkah</h2></div>
+    <ol class="route" id="steps"></ol>
+  </div>
+
+  <div class="wrap sec" id="komunitas">
+    <div class="sh"><span class="sign sm">PAPAN KOMUNITAS</span><h2>Temukan kami di sini</h2></div>
+    <div class="notices" id="comm"></div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section class="page" id="p-about"><div class="wrap">
+  <header class="head"><span class="sign">PROFIL KOTA</span><h1>Tentang Sora City</h1><p>Server publik bertema kota.</p></header>
+  <div class="abt">
+    <div class="col">
+      <figure class="photo rv a-photo" style="--r:-2deg"><img src="assets/img/sekolah.jpg" alt="Gedung di kota Sayama" loading="lazy"><figcaption>SoraCity</figcaption></figure>
+      <div class="paper taped rv a-mascot" style="--r:1.5deg;text-align:center"><h3 class="mono">MASKOT</h3><img class="fox" src="assets/img/maskot-sora.jpg" alt="Maskot Sora" loading="lazy" width="240" height="240"><p class="fine">Si rubah putih, maskot Sora City.</p></div>
+    </div>
+    <div class="col">
+      <div class="paper rv pinned a-concept" style="--r:.6deg">
+        <h2>Konsep</h2><p>Sora City adalah server Minecraft Java Edition bertema kota. Pemain bebas menjelajah, bersosialisasi, dan mengikuti berbagai aktivitas.</p>
+        <h2>Komunitas</h2><p>Sora City dibangun bersama para pemainnya: ramah, santai, dan terbuka untuk pemain baru.</p>
+      </div>
+      <div class="paper rv taped a-tech" style="--r:-1.2deg">
+        <h3 class="mono">DATA TEKNIS</h3>
+        <table class="tbl"><tr><td>Edisi</td><td>Java Edition</td></tr><tr><td>Versi</td><td>1.20.1 – terbaru</td></tr><tr><td>Bedrock</td><td>Tidak didukung</td></tr><tr><td>Platform</td><td>PC &amp; Android*</td></tr><tr><td>Tipe</td><td>Publik</td></tr></table>
+        <div class="tiles"><div class="tile"><small>EDISI</small><b>Java Edition</b></div><div class="tile"><small>VERSI</small><b>1.20.1 – terbaru</b></div><div class="tile"><small>PLATFORM</small><b>PC &amp; Android*</b></div><div class="tile"><small>TIPE</small><b>Publik</b></div><div class="tile no"><small>BEDROCK</small><b>Tidak didukung</b></div></div>
+        <p class="fine">*Android memakai launcher Java seperti PojavLauncher.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- FITUR -->
+<section class="page" id="p-features"><div class="wrap">
+  <header class="head"><span class="sign">FASILITAS KOTA</span><h1>Yang bisa kamu lakukan</h1><p>Daftar fitur Sora City. Akan terus bertambah.</p></header>
+  <div class="rows" id="feat"></div>
+</div></section>
+
+<!-- GALERI -->
+<section class="page" id="p-gallery"><div class="wrap">
+  <header class="head"><span class="sign">ALBUM KOTA</span><h1>Sayama dalam gambar</h1><p>Kota, lingkungan, dan aktivitas pemain.</p></header>
+  <div class="rows" id="gal"></div>
+</div></section>
+
+<!-- STAFF -->
+<section class="page" id="p-staff"><div class="wrap">
+  <header class="head"><span class="sign">DATA PENDUDUK</span><h1>Tim Sora City</h1><p>Orang-orang yang membangun SoraCity.</p></header>
+  <div id="staff"></div>
+</div></section>
+
+<!-- RANK -->
+<section class="page" id="p-ranks"><div class="wrap">
+  <header class="head"><span class="sign">LOKET TIKET</span><h1>SoraCity Ranks</h1><p>Pilih tiket rank, lalu pesan langsung lewat WhatsApp.</p></header>
+  <div class="rows" id="rank"></div>
+</div></section>
+<!-- ARSITEK (pendiri) -->
+<section class="page" id="p-creators"><canvas id="stars"></canvas><div class="wrap cw">
+  <header class="head" style="text-align:center"><span class="sign">DI BALIK KOTA</span><h1>Pengembang Web Sora City</h1><p style="margin:0 auto">Dua orang yang membangun ide website ini.</p></header>
+  <div class="duo" id="duo"></div>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap"><span class="mono">SORA CITY · </span><span>© 2026 Sora City · Bukan produk resmi Mojang atau Microsoft.</span></div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Galeri"><button class="x" aria-label="Tutup">✕</button><button class="pv" aria-label="Sebelumnya">‹</button><img alt=""><p></p><button class="nx" aria-label="Berikutnya">›</button></div>
+<div class="toast glass dk" id="toast" role="status"></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
